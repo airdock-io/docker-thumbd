@@ -4,7 +4,7 @@ ADD assets /tmp
 
 # Install Node.js
 RUN apt-get update -qq && apt-get install -y --no-install-recommends imagemagick && \
-  mv /tmp/thumbd /srv/node/thumbd && chown -R node:node /srv/node
+  mv /tmp/thumbd /srv/node/thumbd && chown -R node:node /srv/node && \
   gosu node:node /tmp/install.sh && \
   /root/post-install
 
