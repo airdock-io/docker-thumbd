@@ -16,4 +16,4 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends imagemagick
 
 WORKDIR /srv/node/thumbd
 
-CMD ["gosu", "node:node", "npm" "start"]
+CMD ["gosu", "node:node", "npm", "start"]

@@ -28,3 +28,4 @@ debug:
 
 run:
 	@echo "IPAddress =" $$(docker inspect --format '{{.NetworkSettings.IPAddress}}' $$(docker run -d --env-file=.env --name thumbd $(NAME):$(VERSION)))
+	
