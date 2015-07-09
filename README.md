@@ -28,7 +28,7 @@ You should have already install [Docker](https://www.docker.com/).
 
 Configure your .env file and execute:
 
-		docker run -d --name --env-file=.env  node airdock/thumbd
+		docker run -d --name thumbd --env-file=.env  airdock/thumbd
 
 ## Configuration
 
