@@ -126,6 +126,8 @@ See [Readme of thumbd project](https://github.com/geronimo-iia/thumbd/blob/maste
 
 ## Tag latest (current)
 
+- Fix default command in docker file
+- add mising file
 - add thumbd patched version
 - use user node:node
 - MIT license
