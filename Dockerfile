@@ -6,14 +6,13 @@
 FROM airdock/node:10
 MAINTAINER Jerome Guibert <jguibert@gmail.com>
 
-ADD assets /tmp
-
-# Install Node.js
+# Install Thumbd
 RUN apt-get update -qq && apt-get install -y --no-install-recommends imagemagick && \
-  mv /tmp/thumbd /srv/node/thumbd && chown -R node:node /srv/node && \
-  gosu node:node /tmp/install.sh && \
+  mkdir -p /srv/node/thumbd && cd /srv/node/thumbd && \
+  npm install nan && npm install thumbd && npm cache clear && \
+  chown -R node:node /srv/node && \
   /root/post-install
 
 WORKDIR /srv/node/thumbd
 
-CMD ["gosu", "node:node", "npm", "start"]
+CMD ["gosu", "node:node", "npm", "start", "thumbd"]
