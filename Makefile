@@ -24,7 +24,7 @@ release: build tag_latest
 	@git push origin v-$(VERSION)
 
 debug:
-	docker run -t -i $(NAME):$(VERSION) /bin/bash -l
+	docker run -t -i --env-file=.env  $(NAME):$(VERSION) /bin/bash -l
 
 run:
 	@echo "IPAddress =" $$(docker inspect --format '{{.NetworkSettings.IPAddress}}' $$(docker run -d --env-file=.env --name thumbd $(NAME):$(VERSION)))

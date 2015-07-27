@@ -1,6 +1,6 @@
 # Thumbd
 
-Docker Image for [Thumbd](https://github.com/geronimo-iia/thumbd) based on airdock/node:10
+Docker Image for [Thumbd](https://github.com/bcoe/thumbd) based on airdock/node:10
 
 Thumbd is an image thumbnailing server built on top of Node.js, SQS, S3, and ImageMagick.
 
@@ -18,8 +18,7 @@ Purpose of this image is:
 
 ***Few links***:
 
-- [Thumbd patched](https://github.com/geronimo-iia/thumbd)
-- [Origin Thumbd Project](https://github.com/bcoe/thumbd)
+- [Thumbd Project](https://github.com/bcoe/thumbd)
 
 
 # Usage
@@ -116,19 +115,17 @@ _description_ accepts the following keys:
 * **quality:** the quality of the thumbnail, in percent. e.g. `90`.
 * **autoOrient:** true/false, whether to automatically rotate the photo based on EXIF data (for correcting orientation on phone images, etc)
 
-See [Readme of thumbd project](https://github.com/geronimo-iia/thumbd/blob/master/README.md) for more information.
+See [Readme of thumbd project](https://github.com/bcoe/thumbd/blob/master/README.md) for more information.
 
 # Change Log
 
-## TODO
-
-- change thumbd import when patch will be released
 
 ## Tag latest (current)
 
+
+- install thumbd from npm (since release 2.17.0)
 - Fix default command in docker file
 - add mising file
-- add thumbd patched version
 - use user node:node
 - MIT license
 
