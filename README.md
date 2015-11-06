@@ -1,4 +1,4 @@
-# Thumbd
+# Thumbd [![](https://badge.imagelayers.io/airdock/thumbd:latest.svg)](https://imagelayers.io/?images=airdock/thumbd:latest 'Get your own badge on imagelayers.io')
 
 Docker Image for [Thumbd](https://github.com/bcoe/thumbd) based on airdock/node:10
 
